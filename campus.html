@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="University of Caloocan City campus directory">
+  <title>UCC | Campus</title>
+  <link rel="icon" type="image/png" href="images/UCC2.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="campus.css">
+</head>
+<body>
+
+<!-- TOP UTILITY BAR -->
+<div class="utility-bar">
+    <div class="utility-inner">
+        <div class="utility-links">
+            <a href="e-services.html">E-SERVICES</a>
+            <a href="student-life.html">STUDENT LIFE</a>
+            <a href="community-extension.html">
+                COMMUNITY EXTENSION SERVICES
+            </a>
+            <a href="admission.html">ADMISSION</a>
+            <a href="news.html">NEWS</a>
+            <a href="alumni.html">ALUMNI</a>
+            <a href="careers.html">CAREERS</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- BRAND HEADER -->
+<header class="brand-header">
+  <div class="container brand-inner">
+
+    <!-- LEFT LOGOS -->
+    <div class="brand-logos">
+      <img src="images/BagongPilipinas.png" alt="Bagong Pilipinas">
+      <img src="images/Caloocan.png" alt="Caloocan City">
+      <img src="images/UCC2.png" alt="University of Caloocan City seal">
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <nav class="main-nav" id="mainNav">
+      <div class="nav-inner">
+<div class="nav-links">
+    <a href="homepage.html">HOME</a>
+    <!-- ABOUT DROPDOWN -->
+    <div class="nav-dropdown">
+        <button type="button">
+            ABOUT <span>⌄</span>
+        </button>
+        <div class="dropdown-menu">
+            <a href="About.html" class="current-page">About UCC</a>
+            <a href="board-of-regents.html">Board of Regents</a>
+            <a href="executive-officials.html">Executive Officials</a>
+        </div>
+    </div>
+    <!-- ACADEMICS DROPDOWN -->
+    <div class="nav-dropdown">
+        <button type="button">
+            ACADEMICS <span>⌄</span>
+        </button>
+        <div class="dropdown-menu academics-menu">
+            <a href="business-accountancy.html">
+                College of Business and Accountancy
+            </a>
+            <a href="criminal-justice.html">
+                College of Criminal Justice Education
+            </a>
+            <a href="education.html">
+                College of Education
+            </a>
+            <a href="engineering.html">
+                College of Engineering
+            </a>
+            <a href="law.html">
+                College of Law
+            </a>
+            <a href="liberal-arts-sciences.html">
+                College of Liberal Arts and Sciences
+            </a>
+            <a href="graduate-school.html">
+                Graduate School
+            </a>
+        </div>
+    </div>
+    <a href="campus.html" class="active">CAMPUS</a>
+    <a href="contacts.html">CONTACTS</a>
+</div>
+        <!-- SEARCH -->
+        <form class="search-box" onsubmit="return false;">
+          <input
+            type="search"
+            placeholder="Search..."
+            aria-label="Search UCC"
+          >
+          <button
+            type="submit"
+            aria-label="Search"
+          >
+            ⌕
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- RIGHT AM LOGO -->
+    <img
+      class="am-logo"
+      src="images/AM-LOGO.png"
+      alt="Aksyon at Malasakit"
+    >
+  </div>
+</header>
+
+<!-- CAMPUS PAGE -->
+<main id="campuses">
+  <!-- HEADER -->
+  <section class="campus-hero">
+    <!-- Small directory label -->
+    <div class="campus-brand">
+      <span class="brand-icon">♜</span>
+      <span>UCC CAMPUS DIRECTORY</span>
+    </div>
+    <div class="container">
+      <h1>Find your UCC Campus</h1>
+      <p>Explore our campuses located across Caloocan City.</p>
+      <!-- FILTER PILLS -->
+      <div class="filter-pills">
+        <a class="selected" href="#all-campuses">ALL CAMPUSES</a>
+        <a href="#main-campus">MAIN CAMPUS</a>
+        <a href="#extension-campuses">EXTENSION CAMPUSES</a>
+      </div>
+      <div class="campus-community-badge">
+        <i data-lucide="users"></i>
+        <span>
+          4 CAMPUSES
+          <small>ONE COMMUNITY</small>
+        </span>
+      </div>
+    </div>
+  </section>
+  <!-- CAMPUS DIRECTORY -->
+  <section class="campus-directory container">
+    <div class="campus-grid" id="all-campuses">
+      <!-- MAIN CAMPUS -->
+      <article class="campus-card featured" id="main-campus">
+        <div class="campus-image-wrap">
+          <img src="images/UCC-SOUTH.png" alt="Biglang Awa Main Campus">
+          <span class="campus-badge">★ MAIN CAMPUS</span>
+        </div>
+        <div class="campus-card-body">
+          <h2>Biglang Awa Main Campus</h2>
+          <div class="campus-detail">
+            <i data-lucide="map-pin"></i>
+            <span>Biglang Awa Street, Cor 11th Ave, Caloocan City</span>
+          </div>
+          <div class="campus-detail">
+            <i data-lucide="phone"></i>
+            <span>Trunk Line: 8528-4654</span>
+          </div>
+          <div class="campus-detail">
+            <i data-lucide="user-round"></i>
+            <span>Admin: 53106855</span>
+          </div>
+          <a class="campus-link" href="contact.html">
+            <span>VIEW CAMPUS</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+      </article>
+      <!-- CONGRESSIONAL -->
+      <article class="campus-card extension-card" id="congressional-campus">
+        <div class="extension-number">02</div>
+        <div class="extension-image">
+          <img src="images/University of Caloocan City.jpg" alt="Congressional Extension Campus">
+        </div>
+        <div class="small-campus-info">
+          <h3>CONGRESSIONAL<br>EXTENSION CAMPUS</h3>
+          <div class="campus-detail">
+            <i data-lucide="map-pin"></i>
+            <span>Congressional Rd Ext, Barangay 171, Caloocan</span>
+          </div>
+          <div class="campus-detail">
+            <i data-lucide="phone"></i>
+            <span>Contact: 85242267</span>
+          </div>
+        </div>
+      </article>
+      <!-- BAGONG SILANG -->
+      <article class="campus-card extension-card" id="bagong-silang-campus">
+        <div class="extension-number">03</div>
+        <div class="extension-image">
+          <img src="images/UCC-BAGONGSILANG.png" alt="Bagong Silang Extension Campus">
+        </div>
+        <div class="small-campus-info">
+          <h3>BAGONG SILANG<br>EXTENSION CAMPUS</h3>
+          <div class="campus-detail">
+            <i data-lucide="map-pin"></i>
+            <span>Barangay 176, Bagong Silang, Caloocan City</span>
+          </div>
+          <div class="campus-detail">
+            <i data-lucide="phone"></i>
+            <span>Contact: 88132324</span>
+          </div>
+        </div>
+      </article>
+      <!-- CAMARIN -->
+      <article class="campus-card extension-card" id="camarin-campus">
+        <div class="extension-number">04</div>
+        <div class="extension-image">
+          <img src="images/UCC-CAMARIN.png" alt="Camarin Extension Campus">
+        </div>
+        <div class="small-campus-info">
+          <h3>CAMARIN<br>EXTENSION CAMPUS</h3>
+          <div class="campus-detail">
+            <i data-lucide="map-pin"></i>
+            <span>23 Chrysanthemum St, Barangay 174, Caloocan, Metro Manila</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+
+<!--CAMPUS AT A GLANCE-->
+<section class="glance-section">
+  <div class="container">
+    <div class="section-title">
+      <div class="section-eyebrow">UCC CAMPUS DIRECTORY <span></span></div>
+      <div class="section-heading-row">
+        <span></span>
+        <h2>CAMPUS AT A GLANCE</h2>
+        <span></span>
+      </div>
+    </div>
+    <div class="glance-grid">
+      <div class="glance-card">
+        <div class="glance-icon"><i data-lucide="building-2"></i></div>
+        <div class="glance-text">
+          <strong>4</strong>
+          <span>CAMPUSES</span>
+        </div>
+      </div>
+      <div class="glance-card">
+        <div class="glance-icon"><i data-lucide="map-pin"></i></div>
+        <div class="glance-text">
+          <strong>CITY-WIDE</strong>
+          <span>ACCESS</span>
+        </div>
+      </div>
+      <div class="glance-card">
+        <div class="glance-icon"><i data-lucide="users"></i></div>
+        <div class="glance-text">
+          <strong>STUDENT-</strong>
+          <span>CENTERED SPACES</span>
+        </div>
+      </div>
+      <div class="glance-card">
+        <div class="glance-icon"><i data-lucide="heart-handshake"></i></div>
+        <div class="glance-text">
+          <strong>ONE UCC</strong>
+          <span>COMMUNITY</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--VISIT CTA-->
+<section class="visit-callout container">
+  <div>
+    <h2>Planning a visit?</h2>
+    <p>See contact details and directions for each campus.</p>
+  </div>
+  <a href="contact.html" class="gold-button">
+    CONTACT UCC
+    <i data-lucide="arrow-right"></i>
+  </a>
+</section>
+</main>
+
+
+<!-- FOOTER -->
+<footer id="contact">
+
+  <!-- Building background -->
+  <div class="footer-building">
+    <img src="images/FOOTER.jpg" alt="University of Caloocan City Building">
+  </div>
+
+  <div class="container footer-content">
+
+    <!-- CONTACT / BRAND -->
+    <div class="footer-contact">
+
+      <img
+        src="images/UCC2.png"
+        alt="University of Caloocan City"
+        class="footer-logo"
+      >
+
+      <div class="footer-contact-info">
+
+        <h3>University of Caloocan City</h3>
+
+        <div class="contact-item">
+          <i data-lucide="map-pin"></i>
+          <p>
+            Biglang Awa Street, Cor 11th Ave Catleya,<br>
+            Caloocan, 1400 Metro Manila, Philippines
+          </p>
+        </div>
+
+        <div class="contact-item">
+          <i data-lucide="phone"></i>
+          <p>8528-4654</p>
+        </div>
+
+        <div class="contact-item">
+          <i data-lucide="mail"></i>
+          <p>admin@ucc-caloocan.edu.ph</p>
+        </div>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footer-socials">
+        <a href="#" aria-label="Facebook">
+          <i data-lucide="facebook"></i>
+        </a>
+
+        <a href="#" aria-label="Instagram">
+          <i data-lucide="instagram"></i>
+        </a>
+
+        <a href="#" aria-label="YouTube">
+          <i data-lucide="youtube"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- INQUIRY FORM -->
+    <div class="footer-links">
+      <h4>INQUIRY FORM</h4>
+      <a href="#">Student Affairs</a>
+      <a href="#">Academic Office</a>
+      <a href="#">Accounting Matters</a>
+      <a href="#">Alumni Association</a>
+      <a href="#">Daily Consultation</a>
+      <a href="#">Graduate School</a>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="footer-links">
+      <h4>SERVICES</h4>
+      <a href="#">Library</a>
+      <a href="#">Guidance and Counselling</a>
+      <a href="#">Registrar's Office</a>
+      <a href="#">Alumni Connect</a>
+      <a href="#">Faculty Portal</a>
+      <a href="#">Student Portal</a>
+    </div>
+  </div>
+
+
+  <!-- FOOTER BOTTOM -->
+  <div class="container footer-bottom">
+    <span>
+      © 2026 University of Caloocan City. All Rights Reserved.
+    </span>
+
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Accessibility</a>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top">
+  ↑
+</button>
+
+<!-- ICONS -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script>
+  lucide.createIcons();
+
+  const backTop = document.getElementById("backTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backTop.classList.add("show");
+    } else {
+      backTop.classList.remove("show");
+    }
+  });
+
+  backTop.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+
+const menuToggle = document.querySelector(".menu-toggle");
+const mainNav = document.querySelector(".main-nav");
+
+if (menuToggle) {
+  menuToggle.addEventListener("click", () => {
+    mainNav.classList.toggle("open");
+  });
+}
+</script>
+
+</body>
+</html>
+
