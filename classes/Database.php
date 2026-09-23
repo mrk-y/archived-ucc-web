@@ -4,18 +4,18 @@ class Database {
     private $dbname = "ucc";
     private $username = "mky";
     private $userpass = "admin";
-    private $conn;
 
     public function getConnection() {
         $conn = null;
 
         try {
-            $this->conn = new PDO("mysql:host=" . $host . ";dbname=" . $dbname . "," . $username . "," . $userpass);
-            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            return $conn;
+            $conn = new PDO("mysql:host=" . $this->host . ";dbname=" . $this->dbname, $this->username, $this->userpass);
+            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
             echo "Error: " . $e->getMessage();
-            header("/index.php");
+            header("Location: ../404.php");
         }
+
+        return $conn;
     }
 }
